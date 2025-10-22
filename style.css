@@ -303,6 +303,7 @@ footer div {
     display: flex;
     gap: 5px;
     text-align: center;
+}
 
 footer img {
     width: 4vh;
