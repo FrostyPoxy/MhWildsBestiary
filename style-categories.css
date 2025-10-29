@@ -12,6 +12,7 @@ nav {
     width: 100%;
     height: 8vh;
     top: 0;
+    z-index: 2;
 }
 
 nav div {
@@ -25,7 +26,7 @@ nav img {
     float: left;
     width: 4vh;
     height: 6vh;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 nav a{
     float: left;
@@ -42,7 +43,8 @@ nav input {
     border: none;
     margin-top: 14px;
     margin-right: 16px;
-    font-size: 17px
+    font-size: 17px;
+    border-radius: 5px;
 }
 
 section{
@@ -57,7 +59,7 @@ section{
     display: flex;
     flex-direction: column;
     background-color:#ad5d5d;
-    background-image: linear-gradient(to bottom,#92B6D5 ,#6A89A8,#7E6BAE, #C89092, #D8AE47);
+    background-image: linear-gradient(to bottom,#ad5d5d ,#6A89A8,#7E6BAE, #C89092);
     gap: 10px;
 }
 
@@ -70,34 +72,40 @@ section{
 .side-bar a {
     text-decoration: none;
     padding: 8px;
-    
     color: whitesmoke;
+    border-radius: 10px;
 }
 
 .side-bar a.current {
     background-color: #8A6CFF;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .side-bar a:hover {
     background-color: rgb(150, 78, 179);
+    transform: scale(1.05);
 }
 
 .main{
     width: 84%;
     height: 100%;
     margin-left: 16%;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: #2a2b2c;
     display: grid;
     grid-template-columns:  auto auto auto auto;
 }
 
-.main div.card {
-    background: rgba(94, 84, 80,1);
+.main a.card {
     color: white;
     margin-left: 15px;
     margin-top: 25px;
     margin-right: 15px;
+    text-decoration: none;
+}
+
+.main a:hover {
+    transform: scale(1.05);
 }
 
 
@@ -105,6 +113,7 @@ section{
   width: 35vh;
   height: 50vh;
   background-color: #222;
+  background-image: linear-gradient(to bottom right,#6f83a1 ,#8C6B42,#aa8534);
   color: white;
   border-radius: 10px;
   padding: 10px;
@@ -113,6 +122,7 @@ section{
 
 .card-image {
   position: relative;
+  z-index: 1;
 }
 
 .card-image .back {
@@ -154,7 +164,10 @@ section{
 
 .card-content {
   padding: 10px;
+   margin-top: 1em;
 }
+
+
 
 .card-content h2 {
   margin: 0;
@@ -164,12 +177,12 @@ section{
 
 .subtitle {
   font-size: 18px;
-  margin-top: 5px;
+  margin-top: 0.5em;
 }
 
 .location {
     font-size: 16px; 
-    display: flex;
+    display: flex;    
 }
 
 .location img {
@@ -181,7 +194,7 @@ section{
     font-size: 14px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
+
 }
 
 .tag img {
