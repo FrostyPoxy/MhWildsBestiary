@@ -84,5 +84,5 @@ section {
     margin-left: 20%;
     background-color: #2a2b2c;
     display: grid;
-    grid-template-columns:  auto auto auto auto;
+    grid-template-columns:  auto auto;
 }
