@@ -37,8 +37,8 @@ nav a:hover {
 }
 
 nav img {
-    width: 20px;
-    height: 20px;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 nav div.nav-info {
@@ -59,6 +59,8 @@ nav div.nav-info .badge-threat {
 }
 
 nav div.nav-info .badge-element {
+    display: flex;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.801);
     padding: 5px;
     gap: 5px;
@@ -99,8 +101,40 @@ section.information {
     height: 5em;
 }
 
-.side-bar .side-bar-content {
-    s
+.side-bar-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5em;
+    padding: 0.5em;
+    align-items: center;  
+}
+
+/* .side-bar .side-bar-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+} */
+.monster-info-row{
+    display: flex;
+    align-items: center;
+    /* background-color: rgba(65, 60, 60, 0.5); */
+}
+
+
+.side-bar-content img {
+    width: 2em;
+    height: 2em;
+}
+
+.side-bar-content ul {
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.side-bar-content li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 .main{
