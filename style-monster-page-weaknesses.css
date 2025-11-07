@@ -1,4 +1,4 @@
-body {
+    body {
     margin: 0;
     font-family: "Roboto";
     background-image:url(img/page/rathalos/background-rathalos.jpg);
@@ -37,6 +37,7 @@ nav a{
 nav a:hover {
     background-color: rgb(150, 78, 179);
     border-radius: 10px ;
+    transform: scale(1.05);
 }
 
 nav img {
@@ -168,6 +169,16 @@ section.information {
     background-color:#C4C9CC;
     border-radius: 10px;
 }
+.main-nav a.current {
+    background-color:#60a0ca;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    background-color: #306ba1;
+    transform: scale(1.05);
+}
 
 .main .description {
     background-color: #1E1E1E;
@@ -187,4 +198,21 @@ section.information {
     width: 50em;
     font-style: italic;
     text-wrap: wrap;
+}
+
+section.weaknesses {
+    display: flex;
+    justify-content: space-between;
+    color:white;
+}
+
+.monsters-parts {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.monsters-parts > * {
+    color: white;
+    border: red 3px solid;
+    padding: 0.5em;
 }
