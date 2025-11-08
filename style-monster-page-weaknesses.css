@@ -75,7 +75,7 @@ header section {
 }
 section.information {
     margin-top: 40%;
-    height: 100vh;
+    height: 260vh;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -180,39 +180,110 @@ section.information {
     transform: scale(1.05);
 }
 
-.main .description {
-    background-color: #1E1E1E;
-    border-radius: 15px;
-    color: rgb(204, 194, 168);
-    gap: 0.5em;
-    padding: 20px;
-}
 
-.main .description h2 {
-    font-size: 30px;
-    color: white;
-}
+/* First sub-section */
 
-.main .description p {
-    font-size: 24px;
-    width: 50em;
-    font-style: italic;
-    text-wrap: wrap;
-}
 
-section.weaknesses {
+section.damage-elements {
     display: flex;
     justify-content: space-between;
     color:white;
 }
 
-.monsters-parts {
+.damage-tabel {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 0;
+    align-items: center;
+    border: #D2A13A solid 3px;
 }
 
-.monsters-parts > * {
+.damage-tabel > * {
     color: white;
-    border: red 3px solid;
-    padding: 0.5em;
+    border: #5e5c5c 3px solid;
+    padding: 1em 2em 1em 2em;
+    background-color:#1E1E1E;
+    margin: 0;        
+}
+
+.damage-tabel img {
+    width: 1em;
+    height: 1em;
+}
+
+.element-tabel {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0;
+    align-items: center;
+    border: #D2A13A solid 3px;
+}
+
+.element-tabel > * {
+    color: white;
+    border: #5e5c5c 3px solid;
+    padding: 1em 2em 1em 2em;
+    background-color:#1E1E1E;
+    margin: 0;        
+}
+
+.element-tabel img {
+    width: 1em;
+    height: 1em;
+}
+
+/* Second sub-section */
+
+section.aliments-img {
+    display: flex;
+    flex-direction: column;
+    color:white;
+    gap: 2em;
+} 
+
+.aliments-tabel{
+    display: grid;
+    grid-template-columns: 0.5fr 0.75fr 0.15fr;
+    gap: 0;
+    align-items: stretch;
+    border: #D2A13A solid 3px;
+    transform: scale(1); 
+}
+
+p.aliments-tabel-heading {
+    text-align: center;
+}
+
+.aliments-tabel > * {
+    color: white;
+    border: #5e5c5c 3px solid;
+    padding: 1em 2em 1em 2em;
+    background-color:#1E1E1E;
+    margin: 0;        
+}
+
+.aliments-tabel img {
+    width: 3em;
+    height: 3em;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.aliments-tabel div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aliments-tabel div img {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.big {
+    padding: 2.4em 3.5em;
+}
+
+section.aliments-img img.weak-points {
+    border-radius: 1em;
 }
