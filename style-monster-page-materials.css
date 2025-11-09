@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: "Roboto";
+    background-image:url(img/page/rathalos/background-rathalos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color:#ad5d5d;
+    background-image: linear-gradient(to right, #ad5d5d ,#92b6d5, #af9483);
+    position: fixed;        
+    text-align: center;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    color: white;
+    z-index: 2;
+}
+
+nav a{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 0.5em 0 0.5em;
+    margin-top: 0.5em;
+}
+
+nav a:hover {
+    background-color: rgb(150, 78, 179);
+    border-radius: 10px ;
+    transform: scale(1.05);
+}
+
+nav img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+nav div.nav-info {
+    float: right;
+    display: flex;
+    gap: 10px;
+    margin-right: 15px;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 18px;
+}
+
+nav div.nav-info .badge-threat {
+    background-color: #ea6f0a;
+    background-image: linear-gradient(to right,rgba(228, 138, 20, 0.5),rgba(219, 185, 135, 0.5),rgba(228, 125, 29, 0.5) );
+    padding: 0.3em;
+    border-radius: 15px;
+}
+
+nav div.nav-info .badge-element {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.801);
+    padding: 5px;
+    gap: 5px;
+    border-radius: 15px;    
+}
+header section {
+    height: 40%;
+}
+section.information {
+    margin-top: 40%;
+    height: 150vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+ .side-bar{
+    width: 16%;
+    height: 45em;
+    margin-left: 4%;
+    margin-top: 2em;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    background-color:#ad5d5d;
+    background-image: linear-gradient(to bottom,#ad5d5d ,#6A89A8,#7E6BAE, #C89092);
+    border-radius: 10px;
+    gap: 10px;
+    text-align: center;
+    float: left;
+    z-index: 1;
+}
+
+.side-bar h2{
+    font-size: 28px;
+}
+
+.side-bar img {
+    width: 5em;
+    height: 5em;
+}
+
+.side-bar-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5em;
+    padding: 0.5em;
+    align-items: center;  
+}
+
+.monster-info-row{
+    display: flex;
+    align-items: center;
+}
+
+
+.side-bar-content img {
+    width: 2em;
+    height: 2em;
+}
+
+.side-bar-content ul {
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.side-bar-content li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.main{
+    width: 74%;
+    height: 100%;
+    margin-left: 22%;
+    margin-right: 4%;
+    margin-top: 2em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #1E1E1E;
+    border-radius: 15px;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 0.75em 4em 0.75em 4em;
+    background-color:#C4C9CC;
+    border-radius: 10px;
+}
+
+.main-nav a.current {
+    background-color:#60a0ca;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    background-color: #306ba1;
+    transform: scale(1.05);
+}
+
+section.drops {
+    color: rgb(212, 210, 203);
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: #D2A13A 3px solid;
+}
+
+/* LR section */
+
+.lr-materials {
+    margin-bottom: 2em;
+}
+
+.lr-materials span {
+    font-weight: bold;
+}
+
+
+/* HR Section */
+
+.hr-table {
+    display: grid;
+    grid-template-columns: repeat(6, 1.5fr);
+    gap: 0;
+    align-items: center;
+    border: #D2A13A solid 3px;
+}
+
+.name-material {
+    display: flex;
+
+}
+
+.hr-table > * {
+    color: white;
+    border: #5e5c5c 3px solid;
+    padding: 1em 2em 1em 2em;
+    background-color:#1E1E1E;
+    margin: 0;      
+    height: 1.5em; 
+    text-wrap: initial;
+    text-align: center;
+}
+
+.hr-table img {
+    width: 1em;
+    height: 1em;
+}
