@@ -75,7 +75,7 @@ header section {
 }
 section.information {
     margin-top: 40%;
-    height: 100vh;
+    height: 150vh;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -113,15 +113,9 @@ section.information {
     align-items: center;  
 }
 
-/* .side-bar .side-bar-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5em;
-} */
 .monster-info-row{
     display: flex;
     align-items: center;
-    /* background-color: rgba(65, 60, 60, 0.5); */
 }
 
 
@@ -179,63 +173,5 @@ section.information {
 .main-nav a:hover {
     background-color: #306ba1;
     transform: scale(1.05);
-}
-
-.main .description {
-    background-color: #1E1E1E;
-    border-radius: 15px;
-    color: rgb(204, 194, 168);
-    gap: 0.5em;
-    padding: 20px;
-}
-
-.main .description h2 {
-    font-size: 30px;
-    color: white;
-}
-
-.main .description p {
-    font-size: 24px;
-    width: 50em;
-    font-style: italic;
-    text-wrap: wrap;
-}
-
-.location {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-}
-
-.location h2 {
-    font-size: 30px;
-    border-bottom: #D2A13A solid 3px;
-}
-
-div.gallery {
-  display: flex;
-  gap: 1em;
-}
-
-div.gallery-item {
-  border: 1px solid #D2A13A;
-  width: 180px;
-  background-color: #1E1E1E;
-}
-
-div.gallery-item:hover {
-  border: 1px solid #777;
-}
-
-div.gallery-item img {
-  width: 100%;
-  height: auto;
-}
-
-div.gallery-item p.desc {
-  padding: 0.25em 1em;
-  text-align: center;
-  
 }
 
