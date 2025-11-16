@@ -33,10 +33,81 @@
 
 <section class="information">
     <div class="side-bar">
-        <div>
+        <div class="side-bar-card">
             <h2>Quick Facts</h2>
             <img src="img/page/rathalos/icon-rathalos.png" alt="rathalos">
-        <div class="side-bar-content">
+
+            <div class="side-bar-content">
+                <h3>Enemy type:</h3>
+                <p>Large Monster</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Species:</h3>
+                <p>Flying wyvern</p>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Elements:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/fire.png">
+                    <p>Fire</p>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Aliments:</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/elements/fire.png" alt="fire">
+                            <span>Fireblight</span>
+                        </li>
+                        <li>
+                            <img src="img/aliments/poison.png" alt="poison">
+                            <span>Poison</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="side-bar-content">
+                <h3>Weakness:</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/dragon.png" alt="dragon">
+                    <span>Dragon</span>
+                </div>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Ressistance</h3>
+                <div class="monster-info-row">
+                    <img src="img/elements/fire.png" alt="fire">
+                    <span>Fire</span>
+                </div>
+            </div>
+            
+            <div class="side-bar-content">
+                <h3>Location(s):</h3>
+                <ul>
+                    <li>
+                        <img src="img/Locations/scarlet-forest.png" alt="Scarlet-Forest">
+                        <span>Scarlet-Fores</span>
+                    </li>
+                    <li>
+                        <img src="img/Locations/oilwell-basin.png" alt="Oilwell Basin">
+                        <span>Oilwell Basin</span>
+                    </li>
+                    <li>
+                        <img src="img/Locations/ruins-of-wyveria.png" alt="Ruins of Wyveria">
+                        <span>Ruins of Wyveria</span>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+
+        <!-- <div class="side-bar-content">
             
             <p>Enemy type</p>
             <p>Large Monster</p>
@@ -92,7 +163,7 @@
                 </li>
             </ul>
         
-        </div>
+        </div> -->
         </div>
     </div>
     
@@ -119,122 +190,161 @@
             <div class="hr-materials">
                 <h2>High Rank</h2>
                 <p>The table below indicates the various materials or items obtained from the High Rank version of Rathalos. It also includes the percentage chance of acquiring the materials.</p>
-                
-                <div class="hr-table">
+            
+            <div class="hr-table-wrapper">
+            <table class="hr-table">
+                <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Frequency</th>
+                    <th>Target Rewards</th>
+                    <th>Break Part Rewards</th>
+                    <th>Carves</th>
+                    <th>Wound Destroyed</th>
+                </tr>
+                </thead>
 
-                    <p>Material</p>
-                    <p>Frequency</p>
-                    <p>Target Rewards</p>
-                    <p>Break Part Rewards</p>
-                    <p>Carves</p>
-                    <p>Wound Destroyed</p>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/Rathalos-drops/rathalos_wing.png" alt="">
+                            <p>Rathalos Wing</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>15%</td>
+                    <td>100% (Left Wing)<br>100% (Right Wing)</td>
+                    <td>18%</td>
+                    <td>-</td>
+                </tr>
 
-                    <div class="name-material">
-                        <img src="img/Rathalos-drops/rathalos_wing.png" alt="">
-                        <span>Rathalos Wing</span>
-                    </div>
-                    <div>
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                    </div>
-                    <p>15%</p>
-                    <p>100% (Left Wing) 100%(Right Wing)</p>
-                    <p>18%</p>
-                    <p>-</p>
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/Rathalos-drops/rathalos_scale.png" alt="">
+                            <p>Rathalos Scale +</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>18%</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
 
-                    <div class="name-material">
-                        <img src="img/Rathalos-drops/rathalos_scale.png" alt="">
-                        <span>Rathalos Scale +</span>
-                    </div>
-                    <div>
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                    </div>
-                    <p>18%</p>
-                    <p>-</p>
-                    <p>-</p>
-                    <p>-</p>
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/Rathalos-drops/rathalos_carapace.png" alt="">
+                            <p>Rathalos Carapace</p>
+                        </div>
+                    </td>
+                    <td><img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>8%</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
 
-                    <div class="name-material">
-                        <img src="img/Rathalos-drops/rathalos_carapace.png" alt="">
-                        <span>Rathalos Carapace</span>
-                    </div>
-                    <div>
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                    </div>
-                    <p>8%</p>
-                    <p>-</p>
-                    <p>-</p>
-                    <p>-</p>
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/Rathalos-drops/rathalos_tail.png" alt="">
+                            <p>Rathalos Tail</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>3%</td>
+                    <td>-</td>
+                    <td>5% | 7% (Tail)</td>
+                    <td>-</td>
+                </tr>
 
-                    <div class="name-material">
-                        <img src="img/Rathalos-drops/rathalos_tail.png" alt="">
-                        <span>Rathalos Tail</span>
-                    </div>
-                    <div>
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                    </div>
-                    <p>3%</p>
-                    <p>-</p>
-                    <p>5% 7% (Tail)</p>
-                    <p>-</p>
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/Rathalos-drops/inferno_sac.png" alt="">
+                            <p>Inferno Sac</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>8%</td>
+                    <td>-</td>
+                    <td>11% | 13% (Tail)</td>
+                    <td>-</td>
+                </tr>
 
-                    <div class="name-material">
-                        <img src="img/Rathalos-drops/inferno_sac.png" alt="">
-                        <span>Inferno Sac</span>
-                    </div>
-                    <div>
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                    </div>
-                    <p>8%</p>
-                    <p>-</p>
-                    <p>11% 13% (Tail)</p>
-                    <p>-</p>
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/Rathalos-drops/rathalos_certificate_s.png" alt="">
+                            <p>Rathalos Certificate S</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>8%</td>
+                    <td>-</td>
+                    <td>13% | 80% (Tail)</td>
+                    <td>-</td>
+                </tr>
 
-                    <div class="name-material">
-                        <img src="img/Rathalos-drops/rathalos_certificate_s.png" alt="">
-                        <span>Rathalos Certificate S</span>
-                    </div>
-                    <div>
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                    </div>
-                    <p>8%</p>
-                    <p>-</p>
-                    <p>13% 80% (Tail)</p>
-                    <p>-</p>
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/Rathalos-drops/rath_medulla.png" alt="">
+                            <p>Rath Medulla</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>20%</td>
+                    <td>20%</td>
+                    <td>23%</td>
+                    <td>50%</td>
+                </tr>
 
-                    <div class="name-material">
-                        <img src="img/Rathalos-drops/rathalos_certificate_s.png" alt="">
-                        <span>Rath Medulla</span>
-                    </div>
-                    <div>
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                    </div>
-                    <p>20%</p>
-                    <p>20%</p>
-                    <p>23%</p>
-                    <p>50%</p>
-                    
-                    <div class="name-material">
-                        <img src="img/Rathalos-drops/rathalos_ruby.png" alt="">
-                        <span>Rathalos Ruby</span>
-                    </div>
-                    <div>
-                        <img src="img/damage/1_stars_damage.png" alt="1-star">
-                    </div>
-                    <p>20%</p>
-                    <p>-</p>
-                    <p>30%</p>
-                    <p>50%</p>
-            </div>
+                <tr>
+                    <td>
+                        <div class="name-material">
+                            <img src="img/Rathalos-drops/rathalos_ruby.png" alt="">
+                            <p>Rathalos Ruby</p>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="img/damage/1_stars_damage.png" alt="">
+                    </td>
+                    <td>20%</td>
+                    <td>-</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                </tr>
+
+                </tbody>
+            </table>
+                        </div>
 
         </div>
         
