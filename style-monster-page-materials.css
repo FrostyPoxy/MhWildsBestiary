@@ -108,28 +108,14 @@ section.information {
     height: 5em;
 }
 
-.side-bar-card {
-    width: 100%;
-    max-width: 300px;
-}
-
 .side-bar-content {
     width: 90%;
     max-width: 300px;
     display: flex;
+    align-items: center;
     padding-left: 10px;
     gap: 0.5em;
 }
-
-/* .side-bar-content {
-    width: 100%;
-    max-width: 600px;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 0.5em;
-    align-items: center;  
-} */
-
 
 
 .monster-info-row{
@@ -284,10 +270,6 @@ h2 {
     .side-bar {
         height: 68em;
     }
-
-    .side-bar-card {
-    max-width: none;
-}
 
     .side-bar-content {
     flex-direction: column;
