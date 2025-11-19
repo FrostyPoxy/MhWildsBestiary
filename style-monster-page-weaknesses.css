@@ -74,13 +74,15 @@ header section {
     height: 40%;
 }
 section.information {
+    width: 100vw;
     margin-top: 40%;
-    height: 260vh;
+    height: 150vh;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
  .side-bar{
-    width: 16%;
+    width: 14.5%;
+    max-width: 600px;
     height: 45em;
     margin-left: 4%;
     margin-top: 2em;
@@ -93,7 +95,6 @@ section.information {
     gap: 10px;
     text-align: center;
     float: left;
-    z-index: 1;
 }
 
 .side-bar h2{
@@ -106,22 +107,18 @@ section.information {
 }
 
 .side-bar-content {
-    display: grid;
-    grid-template-columns: auto auto;
+    width: 90%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
     gap: 0.5em;
-    padding: 0.5em;
-    align-items: center;  
 }
 
-/* .side-bar .side-bar-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5em;
-} */
+
 .monster-info-row{
     display: flex;
     align-items: center;
-    /* background-color: rgba(65, 60, 60, 0.5); */
 }
 
 
@@ -182,6 +179,52 @@ section.information {
 
 
 /* First sub-section */
+
+.name-material {
+    display: flex;
+    align-items: center;
+}
+
+.name-material img {
+    height: 2em;
+    width: 2em;
+}
+
+.hr-table-wrapper {
+    border: 3px solid #D2A13A;
+    background: #000;
+    width: 100%;
+    max-width: 1400px;
+}
+
+table.hr-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 15px;
+}
+
+table.hr-table th,
+table.hr-table td {
+    padding: 12px 10px;
+    border: 2px solid #3b3b3b;
+}
+
+table.hr-table th {
+    background: #1c1c1c;
+    font-weight: bold;
+    text-align: center;
+}
+
+table.hr-table td {
+    background: #111;
+    text-align: center;
+}
+
+table.hr-table td:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
 
 
 section.damage-elements {
@@ -286,4 +329,30 @@ p.aliments-tabel-heading {
 
 section.aliments-img img.weak-points {
     border-radius: 1em;
+}
+
+@media (max-width: 1350px) {
+
+    .side-bar {
+        height: 65em;
+    }
+
+    .side-bar-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1015px) {
+
+    .side-bar {
+        height: 68em;
+    }
+
+    .side-bar-content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+  }
 }

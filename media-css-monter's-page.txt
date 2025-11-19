@@ -1,0 +1,51 @@
+/* @media screen and (min-width: 1440px) {
+    section.information {
+        max-height: 1100px;
+    }
+}  
+
+@media screen and (min-width: 1350px) and (max-width: 1439px) {
+
+    .side-bar {
+        height: 65em;
+    }
+
+
+    .side-bar-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+}
+
+@media  (max-width: 1024px) {
+
+    .side-bar {
+        height: 68em;
+    }
+
+    .side-bar-content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) and  (max-width: 1349px) {
+    section.information {
+        max-height: 1200px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    section.information {
+        max-height: 100%;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    section.information {
+        max-height: 700px;
+    }
+} */

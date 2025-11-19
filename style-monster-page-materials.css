@@ -1,5 +1,11 @@
+html { 
+    height: 100%;
+    max-height: 2350px;
+}
+
 body {
     margin: 0;
+    height: 100%;
     font-family: "Roboto";
     background-image:url(img/page/rathalos/background-rathalos.jpg);
     background-repeat: no-repeat;
@@ -19,7 +25,7 @@ nav {
     min-height: 77px;
     top: 0;
     color: white;
-    z-index: 2;
+    z-index: 1;
 }
 
 nav a{
@@ -76,9 +82,10 @@ header section {
     height: 40%;
 }
 section.information {
-    width: 100vw;
+    width: 100%;
     margin-top: 40%;
-    height: 150vh;
+    height: 125dvh;
+    max-height: 110%;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -142,9 +149,7 @@ section.information {
 
 .main{
     width: 74%;
-    height: 100%;
     margin-left: 22%;
-    margin-right: 4%;
     margin-top: 2em;
     position: absolute;
     display: flex;
@@ -218,46 +223,54 @@ h2 {
     background: #000;
     width: 100%;
     max-width: 1400px;
-  }
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  table.hr-table {
+table.hr-table {
     width: 100%;
     border-collapse: collapse;
     color: #fff;
     font-size: 15px;
-  }
+}
 
-  table.hr-table th,
-  table.hr-table td {
+table.hr-table th,
+table.hr-table td {
     padding: 12px 10px;
     border: 2px solid #3b3b3b;
-  }
+}
 
-  table.hr-table th {
+table.hr-table th {
     background: #1c1c1c;
     font-weight: bold;
     text-align: center;
-  }
+}
 
-  table.hr-table td {
+table.hr-table td {
     background: #111;
     text-align: center;
-  }
+}
 
-  table.hr-table td:first-child {
+table.hr-table td:first-child {
     text-align: left;
     padding-left: 20px;
-  }
+}
 
-@media (max-width: 1350px) {
+
+
+@media screen and (min-width: 1440px) {
+    section.information {
+        max-height: 1100px;
+    }
+} 
+
+@media (max-width: 1315px) {
 
     .side-bar {
         height: 65em;
     }
 
-    .side-bar-card {
-    max-width: none;
-}
+
     .side-bar-content {
     flex-direction: column;
     align-items: center;
@@ -265,7 +278,22 @@ h2 {
   }
 }
 
-@media (max-width: 1015px) {
+@media screen and (min-width: 1350px) and (max-width: 1439px) {
+
+    .side-bar {
+        height: 65em;
+    }
+
+
+    .side-bar-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+}
+
+@media  (max-width: 1024px) {
 
     .side-bar {
         height: 68em;
@@ -276,4 +304,22 @@ h2 {
     align-items: center;
     margin-left: 10px;
   }
+}
+
+@media screen and (min-width: 1024px) and  (max-width: 1349px) {
+    section.information {
+        max-height: 1200px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    section.information {
+        max-height: 100%;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    section.information {
+        max-height: 700px;
+    }
 }
