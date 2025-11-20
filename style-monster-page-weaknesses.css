@@ -14,10 +14,11 @@ nav {
     position: fixed;        
     text-align: center;
     width: 100%;
-    height: 8vh;
+    height: 2em;
+    min-height: 77px;
     top: 0;
     color: white;
-    z-index: 2;
+    z-index: 1;
 }
 
 nav a{
@@ -74,13 +75,13 @@ header section {
     height: 40%;
 }
 section.information {
-    width: 100vw;
     margin-top: 40%;
-    height: 150vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 120vh;    
+    background-color: rgba(0,0,0,0.6);
+    padding-bottom: 40px;
 }
 
- .side-bar{
+.side-bar{
     width: 14.5%;
     max-width: 600px;
     height: 45em;
@@ -99,6 +100,7 @@ section.information {
 
 .side-bar h2{
     font-size: 28px;
+    border-bottom: 3px solid #D2A13A;
 }
 
 .side-bar img {
@@ -140,9 +142,7 @@ section.information {
 
 .main{
     width: 74%;
-    height: 100%;
     margin-left: 22%;
-    margin-right: 4%;
     margin-top: 2em;
     position: absolute;
     display: flex;
@@ -162,10 +162,11 @@ section.information {
     text-decoration: none;
     color: black;
     font-size: 20px;
-    padding: 0.75em 4em 0.75em 4em;
+    padding: 1vw 3vw;
     background-color:#C4C9CC;
     border-radius: 10px;
 }
+
 .main-nav a.current {
     background-color:#60a0ca;
     border-radius: 10px;
@@ -179,16 +180,6 @@ section.information {
 
 
 /* First sub-section */
-
-.name-material {
-    display: flex;
-    align-items: center;
-}
-
-.name-material img {
-    height: 2em;
-    width: 2em;
-}
 
 .hr-table-wrapper {
     border: 3px solid #D2A13A;
@@ -212,12 +203,14 @@ table.hr-table td {
 
 table.hr-table th {
     background: #1c1c1c;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
 }
 
 table.hr-table td {
     background: #111;
+    font-size: 20px;
     text-align: center;
 }
 
