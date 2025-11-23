@@ -76,7 +76,7 @@ header section {
 }
 section.information {
     margin-top: 40%;
-    min-height: 120vh;    
+    height: 2280px;
     background-color: rgba(0,0,0,0.6);
     padding-bottom: 40px;
 }
@@ -84,7 +84,7 @@ section.information {
 .side-bar{
     width: 14.5%;
     max-width: 600px;
-    height: 45em;
+    height: auto;
     margin-left: 4%;
     margin-top: 2em;
     position: sticky;
@@ -181,8 +181,9 @@ section.information {
 
 /* First sub-section */
 
-.dam-elem {
+.table-divider {
     display: flex;
+    flex-direction: row;
     gap: 15px;
 }
 
@@ -221,6 +222,10 @@ table.hr-table td {
     background: #111;
     font-size: 20px;
     text-align: center;
+}
+
+table.hr-table td img {
+    width: 2em;
 }
 
 table.hr-table td:first-child {
@@ -305,7 +310,7 @@ table.hr-table td  {
 
 
 
-@media (max-width: 1350px) {
+/* @media (max-width: 1350px) {
 
     .side-bar {
         height: 65em;
@@ -329,4 +334,63 @@ table.hr-table td  {
     align-items: center;
     margin-left: 10px;
   }
+} */
+
+
+@media screen and (min-width: 1440px) {
+    section.information {
+        max-height: 1100px;
+    }
+} 
+
+@media (max-width: 1315px) {
+
+    .side-bar {
+        height: 65em;
+    }
+
+
+    .side-bar-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1439px) {
+
+    .side-bar {
+        height: 65em;
+    }
+
+
+    .side-bar-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+}
+
+@media  (max-width: 1024px) {
+
+    .side-bar {
+        height: 68em;
+    }
+
+    .side-bar-content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    }
+
+    .side-bar-content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .table-divider {
+        flex-direction: column;
+    }
 }
