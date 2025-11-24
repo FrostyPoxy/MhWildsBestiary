@@ -17,10 +17,11 @@ nav {
 }
 
 nav div {
-    margin-left: 8px;
+    display: flex;
+    align-items: center;
     margin-top: 10px;
     color:white;
-    gap:10px;
+    gap: 5px;
 }
 
 nav img {
@@ -28,6 +29,7 @@ nav img {
     width: 2.5em;
     height: 4em;
     border-radius: 5px;
+    margin-top: -0.4em;
 }
 nav a{
     float: left;
@@ -35,7 +37,6 @@ nav a{
     font-weight: bold;
     text-decoration: none;
     color: white;
-    margin-top: 14px;
 }
 
 nav input {
@@ -52,8 +53,32 @@ section{
     margin-top: 71px;
 }
 
+.mobile-header {
+    display: none;
+    background: #333;
+    width: 100%;
+    margin-top: -4em;
+    position: fixed;
+    color: white;
+    padding: 0 10px;
+    align-items: center;
+    gap: 10px;
+    z-index: 3;
+}
 
- .side-bar{
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mobile-header img {
+   height: 2.5em; 
+}
+
+ #side-bar{
     width: 16%;
     height: 100%;
     position: fixed;
@@ -62,15 +87,16 @@ section{
     background-color:#ad5d5d;
     background-image: linear-gradient(to bottom,#ad5d5d ,#6A89A8,#7E6BAE, #C89092);
     gap: 10px;
+    z-index: 3;
 }
 
-.side-bar > * {
+#side-bar > * {
     margin-left: 15px;   
     margin-right: 15px;
 }
 
 
-.side-bar a {
+#side-bar a {
     text-decoration: none;
     padding: 8px;
     color: whitesmoke;
@@ -78,13 +104,13 @@ section{
     transition: transform 0.3s ease;
 }
 
-.side-bar a.current {
+#side-bar a.current {
     background-color: #8A6CFF;
     border-radius: 10px;
     font-weight: bold;
 }
 
-.side-bar a:hover {
+#side-bar a:hover {
     background-color: rgb(150, 78, 179);
     transform: scale(1.05);
 }
@@ -206,4 +232,40 @@ section{
     width: 20px;
     height: 20px;
     margin-top: 1em;
+}
+
+@media (max-width: 768px) {
+    #side-bar{
+        display: none;
+        width: 40%;
+        margin-top: 0.3em;
+    }
+
+    #side-bar h1 {
+        display: none;
+    }
+
+    #side-bar .top {
+        margin-top: 1em;
+    }
+    .mobile-header {
+        display: flex;
+    }
+
+    .fa fa-bars {
+        color: white;
+    }
+
+    .main {
+        margin-top: 130px;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 425px){
+    .main {
+        grid-template-columns: auto auto;
+    }
+    
 }

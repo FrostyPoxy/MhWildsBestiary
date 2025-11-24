@@ -1,0 +1,69 @@
+<div class="mobile-header">
+            <button id="burgerBtn" class="burger">☰</button>
+            <h2>Monster Categories</h2>
+        </div>
+
+        <div class="side-bar">
+            <h2>Monster Categories</h2>
+            <a class="current">All Monsters</a>
+            <a>Amphibians</a>
+            <a>Bird Wyvern</a>
+            <a>Brute Wyvern</a>
+            <a>Cephalopods</a>
+            <a>Constructs</a>
+            <a>Demi Elders</a>
+            <a>Fanged Beasts</a>
+            <a>Flying Wyverns</a>
+            <a>Herbivores</a>
+            <a>Leviathans</a>
+            <a>Temnocerans</a>
+            <a>Wingdrakes</a>
+        </div>
+
+
+
+
+.mobile-header {
+    display: none;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 12px 16px;
+}
+
+.burger {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 14px;
+}
+
+/* -------------------------
+   MOBILE MENU BEHAVIOR
+   ------------------------- */
+@media (max-width: 768px) {
+    .side-bar {
+        width: 260px;
+        left: -260px; /* hidden */
+        transition: 0.3s ease;
+        z-index: 2;
+        height: 100%;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* show when toggled */
+    .side-bar.open {
+        left: 0;
+    }
+
+    /* show mobile header */
+    .mobile-header {
+        display: flex;
+    }
+}
