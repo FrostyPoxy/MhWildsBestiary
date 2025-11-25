@@ -84,7 +84,8 @@ header section h1 {
 
 
 
-#header-description {   
+#header-description {  
+    width: 50rem;
     font-size: 32px;
     text-align: center;
 }
@@ -380,9 +381,15 @@ footer div p {
         font-size: 14px;
     }
 
+    #header-description {
+        width: auto;
+    }
+
     div.discoveries-info div {
         min-height: 460px;  
     }
+
+
 }
 
 @media (max-width: 425px){
