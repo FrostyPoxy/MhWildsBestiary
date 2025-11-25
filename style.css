@@ -1,10 +1,12 @@
+
+
 body {
     margin: 0;
     font-family: "Roboto";
 }
 
 nav{
-    max-height: 69px;
+    max-height: 100px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -22,8 +24,8 @@ nav div.logo {
 }
 
 nav div.logo img {
-    width: 4vh;
-    height: 6vh;
+    width: 2.2rem;
+    height: 3.6rem;
     border-radius: 5%;
 }
 nav a {
@@ -35,14 +37,21 @@ nav a {
     justify-content: space-between;
     align-items: center;
     color: white;
-    width: 10vh;
     font-weight: bold;
-    margin-right: 1em;
+    margin-right: 1.5rem;
+}
+
+nav a.big-screen {
+    display: block;
+}
+
+nav a.small-screen {
+    display: none;
 }
 /*Header*/
 
 header section {
-    width: 100%;
+    
     background-image: url("img/background-header.png");
     background-repeat: no-repeat;
     background-size: cover; 
@@ -75,8 +84,7 @@ header section h1 {
 
 
 
-#header-description {
-    width: 90vh;
+#header-description {   
     font-size: 32px;
     text-align: center;
 }
@@ -93,7 +101,7 @@ header section a {
 /*Discoveries*/
 
 section.discoveries {
-    width: 100%;
+
     background-color:#1C1A16 ;
     text-align: center;
 }
@@ -129,6 +137,7 @@ div.discoveries-heading p {
 
 div.discoveries-info {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 2rem;
@@ -171,7 +180,7 @@ p.description-heading {
 /*  Numbers*/
 
 section#numbers {
-    width: 100%;
+
     background-color: rgba(12, 12, 12, 1);
     text-align: center;
     color: white;
@@ -203,7 +212,6 @@ div.numbers-info {
 /*Categpries*/
 
 #category {
-    width: 100%;
     background-color: rgb(31, 31, 30);
     text-align: center;
     color: white;
@@ -232,6 +240,7 @@ div.category-heading p {
 
 div.category-boxes {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     padding-bottom: 2rem;
 }
@@ -291,7 +300,6 @@ section#category a {
 /*Journey*/
 
 #journey {
-    width: 100%;
     background-color: rgb(42, 36, 25);
     text-align: center;
     color: white;
@@ -300,17 +308,23 @@ section#category a {
     align-items: center;
     text-align: center;
     padding-bottom: 2em;
+    gap: 2rem;
+}
+
+#journey > *{
+    margin: 0;
 }
 
 #journey h5 {
     font-size: 40px;
     font-weight: bold;
+    padding-top: 1em;
 }
 
 #journey p {
     font-size: 24px;
     color: #96938f;
-    width: 50%;
+    width: 90%;
 }
 
 #journey a{
@@ -325,18 +339,26 @@ section#category a {
 
 footer {
     width: 100%;
-    height: 6vh;
     background-color: rgb(31, 31, 30);
-    text-align: center;
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer div {
-    display: flex;
+    display: inline-flex;
     gap: 5px;
     text-align: center;
+    align-items: center;
+}
+
+footer > * {
+    margin: 0;
+}
+
+footer div * {
+    margin: 0;
 }
 
 footer img {
@@ -348,3 +370,74 @@ footer img {
 footer div p {
     font-size: 24px;
 }
+
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 1em;
+    }
+    nav a {
+        margin-right: 0.5rem;
+        font-size: 14px;
+    }
+
+    div.discoveries-info div {
+        min-height: 460px;  
+    }
+}
+
+@media (max-width: 425px){
+    nav div.logo{
+        gap: 0;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin-right: 0.2rem;
+        padding: 6px 2px;
+    }
+
+    nav a.big-screen {
+    display: none;
+    }
+
+    nav a.small-screen {
+    display: block;
+    }
+
+    div.discoveries-info {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    div.discoveries-info div{
+        padding: 1em 0;
+        margin: auto;
+        min-height: auto;
+        width: auto;
+        justify-content: space-around;
+    }
+
+    div.category-boxes {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    div.box-config {
+        width: auto;
+    }
+
+    footer p {
+        font-size:12px ;
+        text-align: center;
+    }
+    
+    footer div {
+        gap: 0;
+    }
+
+    footer div p {
+        font-size: 16px;
+    }
+
+    
+
+} 
