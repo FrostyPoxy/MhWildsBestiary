@@ -2,8 +2,9 @@ body {
     margin: 0;
     font-family: "Roboto";
 }
- /*navbar*/
+
 nav{
+    max-height: 69px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -28,21 +29,20 @@ nav div.logo img {
 nav a {
     text-decoration: none;
     background-color: #ea940a; 
-    padding: 10px 5px 10px 5px;;
-    border-radius: 10%;
+    padding: 10px 5px;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     width: 10vh;
     font-weight: bold;
+    margin-right: 1em;
 }
 /*Header*/
 
 header section {
-    position: relative;
     width: 100%;
-    height: 900px;
     background-image: url("img/background-header.png");
     background-repeat: no-repeat;
     background-size: cover; 
@@ -50,16 +50,22 @@ header section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;    
+    gap: 15px;
+    padding: 6em 0;    
 }
 
 header section div {
     background-color: rgba(255, 255, 255, 0.55);
-    border-radius: 25%;
+    border-radius: 60px;
     padding: 10px;
     border:3px solid black;
     text-align: center;
     font-size: 40px
+}
+
+header section div > * {
+    margin: 0;
+    padding: 1.2rem;
 }
 
 header section h1 {
@@ -80,7 +86,7 @@ header section a {
     font-size: 36px;
     background-color: #ea940a; 
     padding: 12px 7px 12px 7px;;
-    border-radius: 8%;
+    border-radius: 16px;
     color: white;
 }
 
@@ -88,12 +94,7 @@ header section a {
 
 section.discoveries {
     width: 100%;
-    height: 100vh;
     background-color:#1C1A16 ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;   
     text-align: center;
 }
 
@@ -102,20 +103,35 @@ section.discoveries {
     font-size: 44px;
     font-weight: bold;
     color: #C4622D;
+    padding-top: 1rem;
+}
+
+div.discoveries-heading {
+    width: 80vw;
+    margin-top: 1em;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+div.discoveries-heading  > *{
+    margin: 0;
 }
 
 div.discoveries-heading p {
     color: rgb(211, 198, 169);
     font-size: 34px;
-    width: 100vh;
+    word-wrap: normal;
+    padding-bottom: 1em;
 }
 
 div.discoveries-info {
-    
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 10vh;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
 }
 
 
@@ -123,22 +139,27 @@ div.discoveries-info div{
     background-color: #2A2622;
     color: #F4E9D8;
     font-size: 20px;
-    border-radius: 12%;
+    border-radius: 20px;
     text-align: center;
-    height: 40vh;
-    width: 30vh;
+    width: 16vw;
+    min-height: 360px;
     display: flex;
     justify-content: center;
     align-items:center ;
     flex-direction: column;
+    padding: 1em;
+    gap: 1rem;
+}
 
+div.discoveries-info div > * {
+    margin: 0;
 }
 
 div.discoveries-info img {
-    width:6vh ;
-    height:6vh;
+    width:6rem ;
+    height:6rem;
     background-color: aliceblue;
-    border-radius: 35%;
+    border-radius: 50px;
     padding: 0.5em;
 }
 
@@ -151,7 +172,6 @@ p.description-heading {
 
 section#numbers {
     width: 100%;
-    height: 50vh;
     background-color: rgba(12, 12, 12, 1);
     text-align: center;
     color: white;
@@ -172,6 +192,7 @@ div.numbers-info {
     display: flex;
     justify-content:space-around;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .numbers-info-p {
@@ -183,37 +204,47 @@ div.numbers-info {
 
 #category {
     width: 100%;
-    height: 50vh;
     background-color: rgb(31, 31, 30);
     text-align: center;
     color: white;
-    display: flex;
-    flex-direction: column;  
+}
+
+div.category-heading {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+div.category-heading > * {
+    margin: 0;
 }
 
 div.category-heading h4 {
+    padding-top: 2rem;
     font-size: 40px;
     color: #C4622D;
 }
 
 div.category-heading p {
     font-size:24px;
+    padding-bottom: 2.5rem;
 }
 
 div.category-boxes {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 2rem;
 }
 
 div.box-config {
     background-color: rgba(7, 7, 7, 0.715);
-    border-radius: 10%;
+    border-radius: 16px;
     text-align: center;
-    height: 20vh;
-    width: 45vh;
+    width: 28vw;
     padding: 1em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .box-config-heading{
@@ -225,27 +256,28 @@ div.box-config {
 
 p.name {
     font-size:24px ;
+    font-weight: bold;
 }
 
 p.flying-wywern {
     background-color: #ea6f0a;
     background-image: linear-gradient(to right, #ea6f0a ,#dda16f, #ea6f0a);
     padding: 0.8em 0.2em 0.2em 0.2em;
-    border-radius: 15%;
+    border-radius: 15px;
 }
 
 p.leviathans {
     background-color: #0abaea;
     background-image: linear-gradient(to right, #0abaea, #7ad0e7 ,#0abaea);
     padding: 0.8em 0.2em 0.2em 0.2em;
-    border-radius: 15%;
+    border-radius: 15px;
 }
 
 p.fanged-beasts {
     background-color:#8d21be;
     background-image: linear-gradient(to right, #8d21be, #a166bd ,#8d21be );
     padding: 0.8em 0.2em 0.2em 0.2em;
-    border-radius: 15%;
+    border-radius: 15px;
 }
 
 section#category a {
@@ -256,11 +288,10 @@ section#category a {
     color:white ;
 }
 
-/*Jpurney*/
+/*Journey*/
 
 #journey {
     width: 100%;
-    height: 40vh;
     background-color: rgb(42, 36, 25);
     text-align: center;
     color: white;
@@ -268,6 +299,7 @@ section#category a {
     flex-direction: column; 
     align-items: center;
     text-align: center;
+    padding-bottom: 2em;
 }
 
 #journey h5 {
@@ -285,8 +317,8 @@ section#category a {
     text-decoration: none;
     font-size: 30px;
     background-color: #ea940a; 
-    padding: 12px 7px 12px 7px;;
-    border-radius: 10%;
+    padding: 12px 7px;
+    border-radius: 10px;
     color: white;
     align-items: center;
 }
