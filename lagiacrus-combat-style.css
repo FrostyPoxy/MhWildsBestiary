@@ -180,8 +180,7 @@ section.information {
     transform: scale(1.05);
 }
 
-section.moveset {
-    height: 100vh;        
+section.moveset {       
     overflow-y: auto;   
     margin: 20px auto;
     padding: 20px;
@@ -216,11 +215,11 @@ section.moveset {
     color: #bdbdbd;
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
     section.information {
         max-height: 1100px;
     }
-} 
+}  */
 
 @media (max-width: 1315px) {
 
@@ -238,9 +237,9 @@ section.moveset {
 
 @media screen and (min-width: 1350px) and (max-width: 1439px) {
 
-    .side-bar {
+    /* .side-bar {
         height: 65em;
-    }
+    } */
 
 
     .side-bar-content {
@@ -253,9 +252,9 @@ section.moveset {
 
 @media  (max-width: 1024px) {
 
-    .side-bar {
+    /* .side-bar {
         height: 68em;
-    }
+    } */
 
     .side-bar-content {
     flex-direction: column;
@@ -264,13 +263,13 @@ section.moveset {
   }
 }
 
-@media screen and (min-width: 1024px) and  (max-width: 1349px) {
+ @media screen and (min-width: 1024px) and  (max-width: 1349px) {
     section.information {
-        max-height: 1200px;
+        min-height: 150vh;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+/*@media screen and (min-width: 768px) and (max-width: 1023px) {
     section.information {
         max-height: 100%;
     }
@@ -280,4 +279,4 @@ section.moveset {
     section.information {
         max-height: 700px;
     }
-}
+} */
