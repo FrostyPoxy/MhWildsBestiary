@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    height: 100%;
     font-family: "Roboto";
     background-image:url(img/page/lagiacrus/Lagiacrus-background.png);
     background-repeat: no-repeat;
@@ -8,6 +7,8 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+
+
 
 nav {
     background-color:#ad5d5d;
@@ -76,17 +77,12 @@ header section {
     height: 40%;
 }
 section.information {
-    width: 100%;
-    margin-top: 40%;
-    height: 125dvh;
-    max-height: 110%;
-    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 40%;  
+    background-color: rgba(0,0,0,0.6);
+    padding-bottom: 40px;
 }
 
  .side-bar{
-    width: 14.5%;
-    max-width: 600px;
-    height: 45em;
     margin-left: 4%;
     margin-top: 2em;
     position: sticky;
@@ -98,6 +94,9 @@ section.information {
     gap: 10px;
     text-align: center;
     float: left;
+    padding-bottom: 2em;
+    z-index: 1;
+    top: 5em;
 }
 
 .side-bar h2{
@@ -108,6 +107,7 @@ section.information {
 .side-bar img {
     width: 5em;
     height: 5em;
+    margin: auto;
 }
 
 .side-bar-content {
@@ -129,11 +129,12 @@ section.information {
 .side-bar-content img {
     width: 2em;
     height: 2em;
+    margin: auto;
 }
 
 .side-bar-content ul {
     margin: 0;
-    padding-inline-start: 0;
+    padding: 0;
 }
 
 .side-bar-content li {
@@ -143,10 +144,9 @@ section.information {
 }
 
 .main{
-    width: 74%;
     margin-left: 22%;
+    margin-right: 2%;
     margin-top: 2em;
-    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -155,6 +155,7 @@ section.information {
 .main-nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 1em;
     background-color: #1E1E1E;
     border-radius: 15px;
@@ -167,6 +168,9 @@ section.information {
     padding: 1vw 3vw;
     background-color:#C4C9CC;
     border-radius: 10px;
+    margin: 3px;
+    min-width: 132px;
+    text-align: center;
 }
 
 .main-nav a.current {
@@ -178,6 +182,49 @@ section.information {
 .main-nav a:hover {
     background-color: #306ba1;
     transform: scale(1.05);
+}
+
+.side-bar-phone {
+    width: 82%;
+    display: none;
+    flex-direction: column;
+    background-color: #181717;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    padding: 4em 0;
+}
+
+.side-bar-phone h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.side-bar-phone-divider {
+    display: flex;
+    gap: 2rem;
+}
+
+.side-bar-phone-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.side-bar-phone-content img {
+    width: 2em;
+    height: 2em;
+}
+
+.side-bar-phone-content ul {
+    margin: 0;
+    padding: 0;
+}
+
+.side-bar-phone-content li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 
 section.drops {
@@ -203,15 +250,7 @@ h2 {
 
 
 /* HR Section */
-.name-material {
-    display: flex;
-    align-items: center;
-}
 
-.name-material img {
-    height: 2em;
-    width: 2em;
-}
 
 .hr-table-wrapper {
     border: 3px solid #D2A13A;
@@ -220,6 +259,17 @@ h2 {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    overflow: auto;
+    white-space: nowrap;
+}
+.name-material {
+    display: flex;
+    align-items: center;
+}
+
+.name-material img {
+    height: 2em;
+    width: 2em;
 }
 
 table.hr-table {
@@ -253,19 +303,7 @@ table.hr-table td:first-child {
 
 
 
-@media screen and (min-width: 1440px) {
-    section.information {
-        max-height: 1100px;
-    }
-} 
-
 @media (max-width: 1315px) {
-
-    .side-bar {
-        height: 65em;
-    }
-
-
     .side-bar-content {
     flex-direction: column;
     align-items: center;
@@ -274,11 +312,6 @@ table.hr-table td:first-child {
 }
 
 @media screen and (min-width: 1350px) and (max-width: 1439px) {
-
-    .side-bar {
-        height: 65em;
-    }
-
 
     .side-bar-content {
     flex-direction: column;
@@ -289,11 +322,12 @@ table.hr-table td:first-child {
 }
 
 @media  (max-width: 1024px) {
-
-    .side-bar {
-        height: 68em;
+    section.information {
+        padding-bottom: 21vh;;
     }
-
+    .main-nav {
+        justify-content: space-around;
+    }
     .side-bar-content {
     flex-direction: column;
     align-items: center;
@@ -301,20 +335,42 @@ table.hr-table td:first-child {
   }
 }
 
-@media screen and (min-width: 1024px) and  (max-width: 1349px) {
-    section.information {
-        max-height: 1200px;
+@media (max-width: 768px) {
+    .side-bar {
+        display: none;
+     }
+
+    .main {
+        width: 90%;
+        margin-left: 5%;
     }
+
+     .side-bar-phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .monster-icon {
+        width: 12rem;
+     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    section.information {
-        max-height: 100%;
+@media (max-width:425px) {
+    nav div.nav-info {
+        flex-direction: column;
+        font-size: medium;
+        margin-top: 0;
+        margin-right: 0;
+        
     }
-}
+    
+    .side-bar-phone-divider {
+        flex-direction: column;
+    }
 
-@media screen and (min-width: 425px) and (max-width: 767px) {
-    section.information {
-        max-height: 700px;
+    .main-nav  {
+        justify-content: center;
+
     }
 }
