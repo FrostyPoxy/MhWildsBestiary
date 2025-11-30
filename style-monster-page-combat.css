@@ -94,7 +94,9 @@ section.information {
     gap: 10px;
     text-align: center;
     float: left;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
+    z-index: 1;
+    top: 5em;
 }
 
 .side-bar h2{
@@ -132,7 +134,7 @@ section.information {
 
 .side-bar-content ul {
     margin: 0;
-    padding-inline-start: 0;
+    padding: 0;;
 }
 
 .side-bar-content li {
