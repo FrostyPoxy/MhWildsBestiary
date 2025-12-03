@@ -71,11 +71,9 @@ nav div.nav-info .badge-element {
     gap: 5px;
     border-radius: 15px;    
 }
-header section {
-    height: 40%;
-}
+
 section.information {
-    margin-top: 40%;  
+    margin-top: 25%;  
     background-color: rgba(0,0,0,0.6);
     padding-bottom: 40px;
 }
