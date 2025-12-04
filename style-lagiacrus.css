@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: "Roboto";
-    background-image:url(img/page/rathalos/background-rathalos.jpg);
+    background-image:url(img/page/lagiacrus/Lagiacrus-background.png    );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -209,6 +209,7 @@ section.information {
 .side-bar-phone-content img {
     width: 2em;
     height: 2em;
+    margin: none;   
 }
 
 .side-bar-phone-content ul {
@@ -440,27 +441,29 @@ section#moveset {
     color: white;
 }
 
-.moveset h2 {
+#moveset h2 {
     margin-bottom: 20px;
     border-bottom: 2px solid #5f5f5f;
     padding-bottom: 10px;
 }
 
-.moveset {
+#moveset {
     margin-bottom: 20px;
     padding-bottom: 15px;
 }
 
-.moveset div {
-    display:inline;
+#moveset img {
+    width: 1.5em;
+    height: 1.5em;
 }
 
-.moveset h3 {
+#moveset h3 {
     font-size: 24px;
     color: white;
 }
 
-.moveset p {
+#moveset p {
+    display: flex;
     font-size: clamp(12px, 2vw, 20px);
     line-height: 1.5;
     color: #bdbdbd;
@@ -479,7 +482,6 @@ h2 {
     font-weight: bold;
     border-bottom: #D2A13A 3px solid;
 }
-
 .name-material {
     display: flex;
     align-items: center;
