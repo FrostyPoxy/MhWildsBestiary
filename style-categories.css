@@ -171,7 +171,7 @@ section{
   font-size: 12px;
 }
 
-.badge-threat {
+.badge-threat-rathalos {
     background-color: #ea6f0a;
     background-image: linear-gradient(to right,rgba(228, 138, 20, 0.5),rgba(219, 185, 135, 0.5),rgba(228, 125, 29, 0.5) );
     padding: 0.15rem;
@@ -181,6 +181,18 @@ section{
     position: absolute;
     z-index: 1;
 }
+
+.badge-threat-lagiacrus {
+    background-color: #ea640a;
+    background-image: linear-gradient(to right,rgba(228, 79, 20, 0.5),rgba(218, 130, 90, 0.5),rgba(228, 79, 20, 0.5) );
+    padding: 0.15rem;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
 
 .badge-element {
     background-color: rgba(0, 0, 0, 0.801);

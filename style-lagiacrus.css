@@ -57,8 +57,8 @@ nav div.nav-info {
 }
 
 nav div.nav-info .badge-threat {
-    background-color: #ea6f0a;
-    background-image: linear-gradient(to right,rgba(228, 138, 20, 0.5),rgba(219, 185, 135, 0.5),rgba(228, 125, 29, 0.5) );
+    background-color: #ea640a;
+    background-image: linear-gradient(to right,rgba(228, 79, 20, 0.5),rgba(218, 130, 90, 0.5),rgba(228, 79, 20, 0.5) );
     padding: 0.3em;
     border-radius: 15px;
 }
