@@ -345,7 +345,6 @@ table.hr-table td {
     font-size: 20px;
     text-align: center;
 }
-
 div.first-tabel-icon img{
     width:2em ;
 }
@@ -450,10 +449,6 @@ section#moveset {
 #moveset {
     margin-bottom: 20px;
     padding-bottom: 15px;
-}
-
-#moveset img {
-    vertical-align: text-bottom;
 }
 
 #moveset h3 {

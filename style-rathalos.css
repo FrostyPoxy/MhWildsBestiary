@@ -345,8 +345,8 @@ table.hr-table td {
     text-align: center;
 }
 
-table.hr-table td img {
-    width: 2em;
+div.first-tabel-icon img{
+    width:2em ;
 }
 
 table.hr-table td:first-child {
@@ -449,10 +449,6 @@ section#moveset {
 .moveset {
     margin-bottom: 20px;
     padding-bottom: 15px;
-}
-
-.moveset div {
-    display:inline;
 }
 
 .moveset h3 {
