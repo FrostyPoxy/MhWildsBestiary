@@ -308,7 +308,7 @@ section#weaknesses {
     padding: 0;
 }
 
-.hr-table-wrapper {
+.table-wrapper {
     border: 3px solid #D2A13A;
     background: #000;
     width: 100%;
@@ -319,27 +319,27 @@ section#weaknesses {
     
 }
 
-table.hr-table {
+table {
     width: 100%;
     border-collapse: collapse;
     color: #fff;
     font-size: 15px;
 }
 
-table.hr-table th,
-table.hr-table td {
+table th,
+table td {
     padding: 12px 10px;
     border: 2px solid #3b3b3b;
 }
 
-table.hr-table th {
+table th {
     background: #1c1c1c;
     font-size: 26px;
     font-weight: bold;
     text-align: center;
 }
 
-table.hr-table td {
+table td {
     background: #111;
     font-size: 20px;
     text-align: center;
@@ -349,7 +349,7 @@ div.first-tabel-icon img{
     width:2em ;
 }
 
-table.hr-table td:first-child {
+table td:first-child {
     text-align: left;
     padding-left: 20px;
 }

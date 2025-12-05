@@ -139,8 +139,7 @@ section{
 
 
 .card {
-  /* width: 35vh;
-  height: 50vh; */
+  
   background-color: #222;
   background-image: linear-gradient(to bottom right,#6f83a1 ,#8C6B42,#aa8534);
   color: white;
@@ -185,6 +184,17 @@ section{
 .badge-threat-lagiacrus {
     background-color: #ea640a;
     background-image: linear-gradient(to right,rgba(228, 79, 20, 0.5),rgba(218, 130, 90, 0.5),rgba(228, 79, 20, 0.5) );
+    padding: 0.15rem;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.badge-threat-chatacabra {
+    background-color: #0a6bea;
+    background-image: linear-gradient(to right,rgba(20, 117, 228, 0.5),rgba(196, 209, 224, 0.5),rgba(20, 117, 228, 0.5) );
     padding: 0.15rem;
     border-radius: 5px;
     top: 0;
