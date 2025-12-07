@@ -187,7 +187,7 @@ section.information {
     border-radius: 10px;
     color: white;
     margin: auto;
-    padding: 4em 0;
+    padding: 4em 2em;
 }
 
 .side-bar-phone h2 {
@@ -247,7 +247,7 @@ section#overview > *{
 
 .main .description p {
     font-size: 24px;
-    width: 70vw;
+    text-align: center;
     font-style: italic;
     text-wrap: wrap;
 }
@@ -265,9 +265,10 @@ section#overview > *{
 }
 
 div.gallery {
-  display: flex;
-  gap: 1em;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 div.gallery-item {
@@ -542,6 +543,10 @@ h2 {
         flex-direction: column;
         align-items: center;
      }
+
+     .table-divider {
+        flex-direction: column;
+    }
 
      .monster-icon {
         width: 12rem;

@@ -171,7 +171,7 @@ section{
   font-size: 12px;
 }
 
-.badge-threat-rathalos {
+.badge-threat-5 {
     background-color: #ea6f0a;
     background-image: linear-gradient(to right,rgba(228, 138, 20, 0.5),rgba(219, 185, 135, 0.5),rgba(228, 125, 29, 0.5) );
     padding: 0.15rem;
@@ -182,7 +182,7 @@ section{
     z-index: 1;
 }
 
-.badge-threat-lagiacrus {
+.badge-threat-6 {
     background-color: #ea640a;
     background-image: linear-gradient(to right,rgba(228, 79, 20, 0.5),rgba(218, 130, 90, 0.5),rgba(228, 79, 20, 0.5) );
     padding: 0.15rem;
@@ -193,7 +193,7 @@ section{
     z-index: 1;
 }
 
-.badge-threat-chatacabra {
+.badge-threat-1 {
     background-color: #0a6bea;
     background-image: linear-gradient(to right,rgba(20, 152, 228, 0.5),rgba(196, 209, 224, 0.5),rgba(20, 145, 228, 0.5) );
     padding: 0.15rem;
@@ -204,7 +204,7 @@ section{
     z-index: 1;
 }
 
-.badge-threat-yian-kut-ku{
+.badge-threat-4{
     background-color: #0a6bea;
     background-image: linear-gradient(to right,rgba(20, 69, 228, 0.5),rgba(196, 198, 224, 0.5),rgba(20, 69, 228, 0.5) );
     padding: 0.15rem;

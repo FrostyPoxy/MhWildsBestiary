@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: "Roboto";
-    background-image:url(img/page/rathalos/background-rathalos.jpg);
+    background-image:url(img/page/quematrice/quematrice-backgrounds.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -57,8 +57,8 @@ nav div.nav-info {
 }
 
 nav div.nav-info .badge-threat {
-    background-color: #ea6f0a;
-    background-image: linear-gradient(to right,rgba(228, 138, 20, 0.5),rgba(219, 185, 135, 0.5),rgba(228, 125, 29, 0.5) );
+    background-color: #0a6bea;
+    background-image: linear-gradient(to right,rgba(20, 117, 228, 0.5),rgba(196, 209, 224, 0.5),rgba(20, 117, 228, 0.5) );
     padding: 0.3em;
     border-radius: 15px;
 }
@@ -209,6 +209,7 @@ section.information {
 .side-bar-phone-content img {
     width: 2em;
     height: 2em;
+    margin: none;   
 }
 
 .side-bar-phone-content ul {
@@ -345,7 +346,6 @@ table td {
     font-size: 20px;
     text-align: center;
 }
-
 div.first-tabel-icon img{
     width:2em ;
 }
@@ -441,23 +441,23 @@ section#moveset {
     color: white;
 }
 
-.moveset h2 {
+#moveset h2 {
     margin-bottom: 20px;
     border-bottom: 2px solid #5f5f5f;
     padding-bottom: 10px;
 }
 
-.moveset {
+#moveset {
     margin-bottom: 20px;
     padding-bottom: 15px;
 }
 
-.moveset h3 {
+#moveset h3 {
     font-size: 24px;
     color: white;
 }
 
-.moveset p {
+#moveset p {
     font-size: clamp(12px, 2vw, 20px);
     line-height: 1.5;
     color: #bdbdbd;
@@ -476,7 +476,6 @@ h2 {
     font-weight: bold;
     border-bottom: #D2A13A 3px solid;
 }
-
 .name-material {
     display: flex;
     align-items: center;
@@ -539,13 +538,13 @@ h2 {
         margin-left: 5%;
     }
 
-     .side-bar-phone {
+    .side-bar-phone {
         display: flex;
         flex-direction: column;
         align-items: center;
      }
 
-     .table-divider {
+    .table-divider {
         flex-direction: column;
     }
 
@@ -562,6 +561,7 @@ h2 {
         margin-right: 0;
         
     }
+    
     
     .side-bar-phone-divider {
         flex-direction: column;
