@@ -120,6 +120,7 @@ section{
     width: 84%;
     height: 100%;
     margin-left: 16%;
+    padding-bottom: 2em;
     background-color: #2a2b2c;
     display: grid;
     grid-template-columns:  auto auto auto auto;
@@ -156,6 +157,7 @@ section{
 
 .card-image .back {
   width: 100%;
+  min-height: 30vh;
   max-height: 35vh;
 }
 

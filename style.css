@@ -291,6 +291,7 @@ p.fanged-beasts {
 }
 
 section#category a {
+    padding: 0.25em;
     text-decoration: none;
     background-color: #1C1A16;
     width: auto;
