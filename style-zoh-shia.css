@@ -1,10 +1,10 @@
 body {
     margin: 0;
     font-family: "Roboto";
-    background-image:url(img/page/gore-magala/gore-magala-background.png);
+    background-image:url(img/page/zog-shia/zoh-shia-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;    
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -57,8 +57,8 @@ nav div.nav-info {
 }
 
 nav div.nav-info .badge-threat {
-    background-color: #ea6f0a;
-    background-image: linear-gradient(to right,rgba(228, 138, 20, 0.5),rgba(219, 185, 135, 0.5),rgba(228, 125, 29, 0.5) );
+    background-color: #2c79dd;
+    background-image: linear-gradient(to right,rgba(72, 106, 218, 0.5),rgba(196, 198, 224, 0.5),rgba(107, 130, 207, 0.5) );
     padding: 0.3em;
     border-radius: 15px;
 }
@@ -458,9 +458,9 @@ section#moveset {
 }
 
 #moveset p {
-    font-size: clamp(12px, 2vw, 20px);
+    font-size: 18px;
     line-height: 1.5;
-    color: #bdbdbd;
+    color: #c7c5c5;
 }
 
 /* Materials */

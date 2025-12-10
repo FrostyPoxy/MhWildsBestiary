@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: "Roboto";
     color: white;
+    background-color: #2a2b2c;
 }
 
 nav {
@@ -97,21 +98,25 @@ section{
 
 
 
-#side-bar a {
+#side-bar button {
     text-decoration: none;
     padding: 8px;
-    color: whitesmoke;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-#side-bar a.current {
+#side-bar button.current {
     background-color: #8A6CFF;
     border-radius: 10px;
     font-weight: bold;
 }
 
-#side-bar a:hover {
+#side-bar button:hover {
     background-color: rgb(150, 78, 179);
     transform: scale(1.05);
 }
@@ -139,15 +144,18 @@ section{
     transform: scale(1.05);
 }
 
-
 .card {
-  
+  display: none;
   background-color: #222;
   background-image: linear-gradient(to bottom right,#6f83a1 ,#8C6B42,#aa8534);
   color: white;
   border-radius: 10px;
   padding: 10px;
 
+}
+
+.main .show {
+    display: block 
 }
 
 .card-image {
@@ -236,7 +244,7 @@ section{
 }
 
 #fanged-beast, #amphibian, #demi-elder, #temnocerant, #cephalopod,
-#c, #flying-wyvern, #bird-wyvern, #construct, #leviathan {
+#construct, #flying-wyvern, #bird-wyvern, #construct, #leviathan, #brute-wyvern {
     display: block;
 }
 
@@ -328,7 +336,7 @@ section{
     #side-bar{
         display: none;
         width: 40%;
-        margin-top: 0.3em;
+        margin-top: 1em;
     }
 
     #side-bar h1 {
@@ -364,6 +372,10 @@ section{
 @media (max-width: 320px){
     h1 {
         font-size: 1.5em;
+    }
+
+    #side-bar {
+        margin-top: 0;
     }
     
 }

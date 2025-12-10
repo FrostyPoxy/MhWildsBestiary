@@ -441,23 +441,23 @@ section#moveset {
     color: white;
 }
 
-.moveset h2 {
+#moveset h2 {
     margin-bottom: 20px;
     border-bottom: 2px solid #5f5f5f;
     padding-bottom: 10px;
 }
 
-.moveset {
+#moveset {
     margin-bottom: 20px;
     padding-bottom: 15px;
 }
 
-.moveset h3 {
+#moveset h3 {
     font-size: 24px;
     color: white;
 }
 
-.moveset p {
+#moveset p {
     font-size: clamp(12px, 2vw, 20px);
     line-height: 1.5;
     color: #bdbdbd;

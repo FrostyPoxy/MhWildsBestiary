@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Monster Filter</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: sans-serif; background: #111827; color: #f9fafb; }
+
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Левая колонка с кнопками */
+    .sidebar {
+      width: 220px;
+      padding: 20px 16px;
+      background: linear-gradient(180deg, #1f2937, #4b5563);
+    }
+
+    .sidebar h2 {
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
+
+    .filter-btn {
+      display: block;
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: none;
+      background: transparent;
+      color: #e5e7eb;
+      text-align: left;
+      cursor: pointer;
+      transition: background .15s, color .15s;
+    }
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: #111827;
+      color: #f97316;
+    }
+
+    /* Правая часть с карточками */
+    .content {
+      flex: 1;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      background: #111827;
+    }
+
+    .card {
+      border-radius: 16px;
+      padding: 12px;
+      background: radial-gradient(circle at top, #1f2937, #0b1120);
+      border: 1px solid #374151;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 160px;
+      transition: transform .15s, box-shadow .15s;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .card-sub {
+      font-size: 12px;
+      color: #9ca3af;
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      margin-right: 4px;
+    }
+
+    .badge.fire { background: #b91c1c; }
+    .badge.water { background: #1d4ed8; }
+    .badge.threat { background: #f97316; margin-left: auto; }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <!-- ЛЕВАЯ ПАНЕЛЬ -->
+  <aside class="sidebar">
+    <h2>Monster<br>Categories</h2>
+    <button class="filter-btn active" data-filter="all">All Monsters</button>
+    <button class="filter-btn" data-filter="amphibian">Amphibians</button>
+    <button class="filter-btn" data-filter="fanged">Fanged Beasts</button>
+    <button class="filter-btn" data-filter="wyvern">Flying Wyverns</button>
+    <button class="filter-btn" data-filter="demi">Demi Elders</button>
+  </aside>
+
+  <!-- ПРАВАЯ ЧАСТЬ С КАРТОЧКАМИ -->
+  <main class="content" id="monsterGrid">
+    <!-- data-category - через запятую несколько категорий -->
+    <article class="card" data-category="fanged">
+      <div>
+        <div class="card-title">Ajarakan</div>
+        <div class="card-sub">Blaze Beast</div>
+      </div>
+      <div>
+        <span class="badge fire">Fire</span>
+        <span class="badge threat">Threat 2</span>
+      </div>
+    </article>
+
+    <article class="card" data-category="amphibian">
+      <div>
+        <div class="card-title">Chatacabera</div>
+        <div class="card-sub">Desert Trotter</div>
+      </div>
+      <div>
+        <span class="badge water">Elementless</span>
+        <span class="badge threat">Threat 1</span>
+      </div>
+    </article>
+
+    <article class="card" data-category="demi">
+      <div>
+        <div class="card-title">Gore Magala</div>
+        <div class="card-sub">The Eclipse Dragon</div>
+      </div>
+      <div>
+        <span class="badge fire">Dark</span>
+        <span class="badge threat">Threat 6</span>
+      </div>
+    </article>
+
+    <article class="card" data-category="wyvern">
+      <div>
+        <div class="card-title">Sunwing</div>
+        <div class="card-sub">Sky Raptor</div>
+      </div>
+      <div>
+        <span class="badge fire">Fire</span>
+        <span class="badge threat">Threat 3</span>
+      </div>
+    </article>
+
+    <article class="card" data-category="amphibian,wyvern">
+      <div>
+        <div class="card-title">Mist Drake</div>
+        <div class="card-sub">Marsh Wyvern</div>
+      </div>
+      <div>
+        <span class="badge water">Water</span>
+        <span class="badge threat">Threat 4</span>
+      </div>
+    </article>
+  </main>
+</div>
+
+<script>
+  // Берём кнопки и карточки
+  const buttons = document.querySelectorAll('.filter-btn');
+  const cards   = document.querySelectorAll('.card');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // активная кнопка
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+
+      cards.forEach(card => {
+        const categories = card.dataset.category.split(',');
+        const normalized = categories.map(c => c.trim());
+
+        if (filter === 'all' || normalized.includes(filter)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

@@ -29,22 +29,22 @@
         
         <div id="side-bar">
             <h1>Monster Categories</h1>
-            <a class="current top" href="#">All Monsters</a>
-            <a href="#">Amphibians</a>
-            <a href="#">Bird Wyvern</a> 
-            <a href="#">Brute Wyvern</a>  
-            <a href="#">Cephalopods</a>
-            <a href="#">Constructs</a>
-            <a href="#">Demi Elders</a>
-            <a href="#">Fanged Beasts</a>
-            <a href="#">Flying Wyverns</a>
-            <a href="#">Leviathans</a>
-            <a href="#">Temnocerans</a>
+            <button class="button current" href="javascript:void(0);" onclick="filterSelection('all')">All Monsters</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('amphibian')">Amphibians</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('bird-wyvern')">Bird Wyvern</button> 
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('brute-wyvern')">Brute Wyvern</button>  
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('cephalopod')">Cephalopods</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('construct')">Constructs</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('demi-elder')">Demi Elders</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('fanged-beast')">Fanged Beasts</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('flying-wyvern')">Flying Wyverns</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('leviathan')">Leviathans</button>
+            <button class="button" href="javascript:void(0);" onclick="filterSelection('temnocerant')">Temnocerans</button>
 
         </div>
         <div class="main">
 
-            <a id="fanged-beast" class="card" href="#">
+            <a class="card fanged-beast" href="ajarakan.html">
                 <div class="card-image">
                     <span class="badge badge-threat-2">Threat 2</span>
                     <img class="back" src="img/category/mhwilds-ajarakan.png" alt="Nu Udra">
@@ -67,7 +67,7 @@
                 </div>
             </a>
 
-            <a id="amphibian" class="card" href="chatacabra.html">
+            <a class="card amphibian" href="chatacabra.html">
                 <div class="card-image">
                     <span class="badge badge-threat-1">Threat 1</span>
                     <img class="back" src="img/category/chtacabra-img.png" alt="Rathalos">
@@ -90,7 +90,7 @@
                 </div>
             </a>
 
-            <a id="demi-elder" class="card" href="gore-magala.html">
+            <a class="card demi-elder" href="gore-magala.html">
                 <div class="card-image">
                     <span class="badge badge-threat-6">Threat 6</span>
                     <img class="back" src="img/category/MHWilds-Gore_Magala.png" alt="Gore Magala">
@@ -112,7 +112,7 @@
                 </div>
             </a>
 
-            <a id="temnocerant" class="card" href="#">
+            <a class="card temnocerant" href="#">
                 <div class="card-image">
                     <span class="badge badge-threat-2">Threat 2</span>
                     <img class="back" src="img/category/MHWilds-Nerscylla.png" alt="Nerscylla">
@@ -135,7 +135,7 @@
                 </div>
             </a>
 
-            <a id="cephalopod" class="card" href="#">
+            <a class="card cephalopod" href="#">
                 <div class="card-image">
                     <span class="badge badge-threat-3">Threat 3</span>
                     <img class="back" src="img/category/MHWilds-Nu_Udra.png" alt="Nu Udra">
@@ -158,7 +158,7 @@
                 </div>
             </a>
 
-            <a id="brute-wyvern" class="card" href="quematrice.html">
+            <a class="card brute-wyvern" href="quematrice.html">
                 <div class="card-image">
                     <span class="badge badge-threat-1">Threat 1</span>
                     <img class="back" src="img/category/MHWilds-Quematrice.png" alt="Rathalos">
@@ -181,7 +181,7 @@
                 </div>
             </a>
             
-            <a id="flying-wyvern" class="card" href="rahtalos.html">
+            <a class="card flying-wyvern" href="rahtalos.html">
                 <div class="card-image">
                     <span class="badge badge-threat-5">Threat 5</span>
                     <img class="back" src="img/category/rathalos_-_monster_hunter_rise.png" alt="Rathalos">
@@ -195,7 +195,7 @@
                     <p class="subtitle">King of the Skies</p>
                     <div class="location">
                         <img src="img/category/location.svg" alt="location">
-                        <span>Ancient Forest, Wildspire Waste</span>
+                        <span>Ancient Forest, Oilwell Basin, Ruins of Wyveria</span>
                     </div>
                     <div class="tag">
                         <p>Flying wyvern</p> 
@@ -204,7 +204,7 @@
                 </div>
             </a>
 
-            <a id="bird-wyvern" class="card" href="yian-kut-ku.html">
+            <a class="card bird-wyvern" href="yian-kut-ku.html">
                 <div class="card-image">
                     <span class="badge badge-threat-4">Threat 4</span>
                     <img class="back" src="img/category/YianKutKuWilds (1).png" alt="Yian Kut-Ku">
@@ -227,7 +227,7 @@
                 </div>
             </a>
 
-            <a id="construct" class="card" href="#">
+            <a class="card construct" href="zoh-shia.html">
                 <div class="card-image">
                     <span class="badge badge-threat-3">Threat 3</span>
                     <img class="back" src="img/category/mhwilds-zoh_shia.png" alt="Zoh Shia">
@@ -252,7 +252,7 @@
                 </div>
             </a>
 
-            <a id="leviathan" class="card" href="lagiacrus.html">
+            <a class="card leviathan" href="lagiacrus.html">
                 <div class="card-image">
                     <span class="badge badge-threat-6">Threat 6</span>
                     <img class="back" src="img/category/MHWilds-Lagiacrus.png" alt="Lagiacrus">
