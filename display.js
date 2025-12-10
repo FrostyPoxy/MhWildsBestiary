@@ -1,11 +1,3 @@
-// function myFunction() {
-//   var x = document.getElementById("weaknesses");
-//   if (x.style.display === "flex") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "flex";
-//   }
-// }
 function overview() {
   let w = document.getElementById("weaknesses");
   let o = document.getElementById("overview");

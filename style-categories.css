@@ -123,7 +123,7 @@ section{
     padding-bottom: 2em;
     background-color: #2a2b2c;
     display: grid;
-    grid-template-columns:  auto auto auto auto;
+    grid-template-columns:  repeat(4, 1fr);
 }
 
 .main a.card {
@@ -172,50 +172,50 @@ section{
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 12px;
+  right: 0.1em;
+}
+
+.badge-threat {
+    padding: 0.15rem;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
 }
 
 .badge-threat-5 {
     background-color: #ea6f0a;
     background-image: linear-gradient(to right,rgba(228, 138, 20, 0.5),rgba(219, 185, 135, 0.5),rgba(228, 125, 29, 0.5) );
-    padding: 0.15rem;
-    border-radius: 5px;
-    top: 0;
-    right: 0;
-    position: absolute;
-    z-index: 1;
 }
 
 .badge-threat-6 {
     background-color: #ea640a;
     background-image: linear-gradient(to right,rgba(228, 79, 20, 0.5),rgba(218, 130, 90, 0.5),rgba(228, 79, 20, 0.5) );
-    padding: 0.15rem;
-    border-radius: 5px;
-    top: 0;
-    right: 0;
-    position: absolute;
-    z-index: 1;
+
 }
 
 .badge-threat-1 {
     background-color: #0a6bea;
     background-image: linear-gradient(to right,rgba(20, 152, 228, 0.5),rgba(196, 209, 224, 0.5),rgba(20, 145, 228, 0.5) );
-    padding: 0.15rem;
-    border-radius: 5px;
-    top: 0;
-    right: 0;
-    position: absolute;
-    z-index: 1;
+
+}
+
+.badge-threat-2 {
+    background-color: rgb(0, 102, 255);
+    background-image: linear-gradient(to right,rgba(0, 139, 253, 0),rgba(196, 209, 224, 0.5),rgba(20, 127, 228, 0) );
+
+}
+
+.badge-threat-3 {
+    background-color: #2c79dd;
+    background-image: linear-gradient(to right,rgba(72, 106, 218, 0.5),rgba(196, 198, 224, 0.5),rgba(107, 130, 207, 0.5) );
 }
 
 .badge-threat-4{
     background-color: #0a6bea;
     background-image: linear-gradient(to right,rgba(20, 69, 228, 0.5),rgba(196, 198, 224, 0.5),rgba(20, 69, 228, 0.5) );
-    padding: 0.15rem;
-    border-radius: 5px;
-    top: 0;
-    right: 0;
-    position: absolute;
-    z-index: 1;
+
 }
 
 
@@ -233,6 +233,11 @@ section{
 .card-content {
   padding: 10px;
    margin-top: 1em;
+}
+
+#fanged-beast, #amphibian, #demi-elder, #temnocerant, #cephalopod,
+#c, #flying-wyvern, #bird-wyvern, #construct, #leviathan {
+    display: block;
 }
 
 
