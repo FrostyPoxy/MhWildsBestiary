@@ -298,6 +298,7 @@ div.gallery-item p.desc {
 section#weaknesses {
     display: none;
     flex-direction: column;
+    gap: 1em;
 }
 
 .table-divider {
