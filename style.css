@@ -41,13 +41,7 @@ nav a {
     margin-right: 1.5rem;
 }
 
-nav a.big-screen {
-    display: block;
-}
 
-nav a.small-screen {
-    display: none;
-}
 /*Header*/
 
 header section {
@@ -94,7 +88,7 @@ header section a {
     text-decoration: none;
     font-size: 36px;
     background-color: #ea940a; 
-    padding: 12px 7px 12px 7px;;
+    padding: 1rem 1rem;
     border-radius: 16px;
     color: white;
 }
@@ -255,6 +249,7 @@ div.box-config {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 2%;
 }
 
 .box-config-heading{
@@ -262,6 +257,7 @@ div.box-config {
     justify-content: space-between;
     text-align: center;
     position: relative;
+    gap: 0.5em;
 }
 
 p.name {
@@ -291,7 +287,7 @@ p.fanged-beasts {
 }
 
 section#category a {
-    padding: 0.25em;
+    padding: 0.5em;
     text-decoration: none;
     background-color: #1C1A16;
     width: auto;
@@ -373,13 +369,33 @@ footer div p {
     font-size: 24px;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 768px){
+
+    nav a {
+        display: none;
+    }
+
+    header section h1 {
+        font-size: 40px;
+    }
+
+    header section p {
+        font-size: 30px;
+    }
+
+    header section p.header-description {
+        font-size: 26px;
+    }
+    header section a {
+        font-size: 26px;
+    }
+
+    header section div {
+        margin: 5%;
+    }
     nav h1 {
         font-size: 1em;
-    }
-    nav a {
-        margin-right: 0.5rem;
-        font-size: 14px;
     }
 
     #header-description {
@@ -389,11 +405,11 @@ footer div p {
     div.discoveries-info div {
         min-height: 460px;  
     }
-
-
 }
 
 @media (max-width: 425px){
+    
+    
     nav div.logo{
         gap: 0;
     }
@@ -419,10 +435,14 @@ footer div p {
 
     div.discoveries-info div{
         padding: 1em 0;
-        margin: auto;
+        margin: 5%;
         min-height: auto;
         width: auto;
         justify-content: space-around;
+    }
+
+    div.numbers-heading p {
+        margin: 5%;
     }
 
     div.category-boxes {
