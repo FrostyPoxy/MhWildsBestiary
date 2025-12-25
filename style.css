@@ -268,14 +268,14 @@ p.name {
 p.flying-wywern {
     background-color: #ea6f0a;
     background-image: linear-gradient(to right, #ea6f0a ,#dda16f, #ea6f0a);
-    padding: 0.8em 0.2em 0.2em 0.2em;
+    padding: 0.2em 0.2em 0.2em 0.2em;
     border-radius: 15px;
 }
 
 p.leviathans {
     background-color: #0abaea;
     background-image: linear-gradient(to right, #0abaea, #7ad0e7 ,#0abaea);
-    padding: 0.8em 0.2em 0.2em 0.2em;
+    padding: 0.2em 0.2em 0.2em 0.2em;
     border-radius: 15px;
 }
 
