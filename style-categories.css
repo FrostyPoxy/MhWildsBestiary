@@ -6,8 +6,7 @@ body {
 }
 
 nav {
-    background-color:#ad5d5d;
-    background-image: linear-gradient(to right, #ad5d5d ,#92b6d5, #af9483);
+    background-color:rgba(58, 49, 31, 0.95);
     position: fixed;        
     text-align: center;
     width: 100%;
@@ -83,15 +82,22 @@ section{
     width: 16%;
     height: 100%;
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    background-color:#ad5d5d;
-    background-image: linear-gradient(to bottom,#ad5d5d ,#6A89A8,#7E6BAE, #C89092);
-    gap: 10px;
+    background-color:#2a2b2c;
     z-index: 3;
 }
 
-#side-bar > * {
+#side-bar div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2em;
+    background-color: rgba(58, 49, 31, 0.5);
+    margin-left: 1em;
+    padding-bottom: 5dvh;
+    border-radius: 10px;
+}
+
+#side-bar div > * {
     margin-left: 15px;   
     margin-right: 15px;
 }
@@ -105,7 +111,8 @@ section{
     font-weight: bold;
     border: none;
     outline: none;
-    background-color: whitesmoke;
+    color: whitesmoke;
+    background-color: #1C1A16;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -131,27 +138,17 @@ section{
     grid-template-columns:  repeat(4, 1fr);
 }
 
-.main a.card {
-    color: white;
-    margin-left: 15px;
-    margin-top: 25px;
-    margin-right: 15px;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
 .main a:hover {
     transform: scale(1.05);
 }
 
 .card {
-  display: none;
-  background-color: #222;
-  background-image: linear-gradient(to bottom right,#6f83a1 ,#8C6B42,#aa8534);
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-
+    display: none;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    box-shadow: 2.5px 2.5px 3px 3px #202020;
+    margin: 25px 15px 0 15px;
 }
 
 .main .show {
@@ -161,12 +158,15 @@ section{
 .card-image {
   position: relative;
   z-index: 1;
+  background-image: linear-gradient(to bottom right,#6f83a1 ,#8C6B42,#aa8534);
+  padding: 10px; 
 }
 
 .card-image .back {
   width: 100%;
   min-height: 30vh;
   max-height: 35vh;
+  z-index: 0;
 }
 
 .card-image .element {
@@ -180,16 +180,16 @@ section{
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 12px;
-  right: 0.1em;
+  right: 1em;
 }
 
 .badge-threat {
     padding: 0.15rem;
     border-radius: 5px;
-    top: 0;
-    right: 0;
+    top: 1rem;
+    right: 1em;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 .badge-threat-5 {
@@ -229,8 +229,8 @@ section{
 
 .badge-element {
     background-color: rgba(0, 0, 0, 0.801);
-    bottom: 0;
-    left: 0;
+    left: 0.5em;
+    bottom: 0.5em;
     position: absolute;
     display: flex;
     padding: 0.15rem;
@@ -239,8 +239,10 @@ section{
 }
 
 .card-content {
-  padding: 10px;
-   margin-top: 1em;
+    padding: 1em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+    overflow: hidden;
 }
 
 #fanged-beast, #amphibian, #demi-elder, #temnocerant, #cephalopod,
