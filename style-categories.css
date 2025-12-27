@@ -95,6 +95,7 @@ section{
     margin-left: 1em;
     padding-bottom: 5dvh;
     border-radius: 10px;
+    padding-top: 2em;
 }
 
 #side-bar div > * {
@@ -119,8 +120,6 @@ section{
 
 #side-bar button.current {
     background-color: #8A6CFF;
-    border-radius: 10px;
-    font-weight: bold;
 }
 
 #side-bar button:hover {
@@ -334,16 +333,38 @@ section{
     
 }
 
+@media (max-width: 1024px) {
+    .main {
+        grid-template-columns:  repeat(3, 1fr);
+    }
+
+    #side-bar h1 {
+        font-size: 26px;
+    }
+}
+
 @media (max-width: 768px) {
     #side-bar{
         display: none;
         width: 40%;
         margin-top: 1em;
+        justify-content: center;
     }
+
+    #side-bar div {
+        margin-top: 1em;
+        margin-left: 0;
+    }
+
+    #side-bar button {
+        font-size: 1.5em;
+    }
+
 
     #side-bar h1 {
         display: none;
     }
+
 
     #side-bar .top {
         margin-top: 1em;
@@ -365,6 +386,11 @@ section{
 }
 
 @media (max-width: 425px){
+
+    #side-bar {
+        width: 65%;
+    }
+
     .main {
         grid-template-columns: auto;
     }
@@ -374,6 +400,10 @@ section{
 @media (max-width: 320px){
     h1 {
         font-size: 1.5em;
+    }
+
+    #side-bar {
+        width: 75%;
     }
 
     #side-bar {
