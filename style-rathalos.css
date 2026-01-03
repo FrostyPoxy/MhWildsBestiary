@@ -10,7 +10,7 @@ body {
 
 nav {
     background-color:rgba(58, 49, 31, 0.95);
-    position: fixed;        
+    position: fixed;
     text-align: center;
     width: 100%;
     height: 2em;
@@ -35,7 +35,7 @@ nav a{
 }
 
 nav a:hover {
-    background-color: rgb(150, 78, 179);
+    background-color:rgba(211, 205, 191, 0.95);
     border-radius: 10px ;
     transform: scale(1.05);
 }
@@ -57,7 +57,7 @@ nav div.nav-info {
 
 nav div.nav-info .badge-threat {
     background-color: #ea6f0a;
-    border:2px solid rgba(255, 38, 0, 0.548);
+    border:3px solid rgba(255, 38, 0);
     background-image: linear-gradient(to right,rgba(228, 138, 20, 0.5),rgba(219, 185, 135, 0.5),rgba(228, 125, 29, 0.5) );
     padding: 0.3em;
     border-radius: 15px;
@@ -78,7 +78,7 @@ section.information {
     padding-bottom: 40px;
 }
 
- .side-bar{
+.side-bar{
     margin-left: 4%;
     margin-top: 2em;
     position: sticky;
@@ -105,7 +105,7 @@ section.information {
     margin: auto;
 }
 
-.side-bar h3 {
+.side-bar h3, h2 {
     color: rgb(204, 194, 168);;
 }
 
@@ -188,7 +188,6 @@ section.information {
 }
 
 .side-bar-phone {
-    width: 82%;
     display: none;
     flex-direction: column;
     background-color:rgba(58, 49, 31, 0.5);
@@ -206,7 +205,6 @@ section.information {
 
 .side-bar-phone h3 {
     color: rgb(204, 194, 168);
-
 }
 
 .side-bar-phone-divider {
