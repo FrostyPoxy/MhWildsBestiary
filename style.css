@@ -59,7 +59,6 @@ header section {
     gap: 15px;
     padding: 6em 0;    
     color: whitesmoke;
-    
 }
 
 
@@ -68,12 +67,12 @@ header section div {
     background-color: hsl(40, 12%, 10%, 0.7);
     border-radius: 20px;
     padding: 10px;
-    /* border:3px solid black; */
     text-align: center;
     font-size: 40px;
     transform: scale(0.9);
-    
+    transition: transform 0.3s ease;
 }
+
 
 header section div > * {
     margin: 0;
@@ -83,6 +82,13 @@ header section div > * {
 header section h1 {
     font-size: 60px;
     color: #C4622D;
+}
+header section div:hover {
+    transform: scale(1);
+}
+
+header section a:hover {
+    transform: scale(1.05);
 }
 
 
@@ -163,6 +169,12 @@ div.discoveries-info div{
     flex-direction: column;
     padding: 1em;
     gap: 1rem;
+    box-shadow: 4px 4px 3px 0 #8a8484;
+    transition: transform 0.3s ease;
+}
+
+div.discoveries-info div:hover {
+    transform: scale(1.1);
 }
 
 div.discoveries-info div > * {
@@ -260,6 +272,12 @@ div.box-config {
     flex-direction: column;
     justify-content: space-between;
     margin: 2%;
+    transition: transform 0.3s ease;
+    box-shadow: 4px 4px 3px 0 #8a8484;
+}
+
+div.box-config:hover {
+    transform: scale(1.05);
 }
 
 .box-config-heading{
@@ -309,6 +327,10 @@ section#category a {
     color:white ;
 }
 
+section#category a:hover {
+    text-decoration: underline;
+}
+
 /*Journey*/
 
 #journey {
@@ -347,6 +369,11 @@ section#category a {
     border-radius: 10px;
     color: white;
     align-items: center;
+    transition: transform 0.3s ease;
+}
+
+#journey a:hover {
+    transform: scale(1.05);
 }
 
 footer {

@@ -187,7 +187,6 @@ section.information {
 }
 
 .side-bar-phone {
-    ;
     display: none;
     flex-direction: column;
     background-color:rgba(58, 49, 31, 0.5);
